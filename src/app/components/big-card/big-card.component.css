@@ -15,7 +15,7 @@
 
 .big-card__container img {
   width: 100%;
-  min-width: 512px;
+  min-width: 712px;
   height: auto;
   display: block;
   border-radius: 12px;
@@ -25,9 +25,9 @@
 
 .texto {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
-  right: 12px;
+  bottom: 0px;
+  left: 0px;
+  right: 50px;
   background-color: white;
   padding: 16px;
   border-radius: 12px;
@@ -48,11 +48,14 @@
   padding-top: 0px;
   margin-top: -15px;
 }
-.texto > p{
+.texto > p > a{
   font-size: small;
   color: #555;
   font-style: italic;
+  font-style: none;
+  text-decoration: none;
 }
+
 
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SmallCardComponent implements OnInit {
 
-  link: string = 'https://conteudo.imguol.com.br/c/entretenimento/85/2025/03/07/anime-one-piece-1741362399365_v2_900x506.png';
-  imgLink: string = 'https://conteudo.imguol.com.br/c/entretenimento/85/2025/03/07/anime-one-piece-1741362399365_v2_900x506.png';
+  @Input()
+  newsLink: string = '';
+
+  @Input()
+  imgLink: string = ''
+  @Input()
+  newsText: string = ''
+
+  @Input()
+  newsTitle: string = ''
 
   constructor() { }
 

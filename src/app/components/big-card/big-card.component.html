@@ -1,18 +1,17 @@
 
 <div class="big-card__container">
-  <!-- os links e imagens foram transferidos para o big-card.component.ts para habilitar uma mudança dinâmica -->
-  <a [href]="crunchyrollLink">
+  <a [href]="newsLink">
     <img [src]="imgLink" alt="Imagem de fundo" />
   </a>
 
   <div class="texto">
-    <h2> O REI ESTÁ DE VOLTA!<br> </h2>
+    <h2> {{newsTitle}}<br> </h2>
 
     <hr>
 
     <p>
-      One Piece Retorna amanhã! Confira no site oficial da
-      <a [href]="crunchyrollLink">Crunchyroll </a>
+
+      <a [href]="newsLink">{{newsText}}</a>
     </p>
 
   </div>
