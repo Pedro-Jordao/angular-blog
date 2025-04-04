@@ -1,21 +1,20 @@
-<div class="card-destaque">
-  <a
-  href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece?srsltid=AfmBOorzoaaxPZzwD7NOI70nVVGLf5v9u-ypRmMhY0RpuO7L1i6uIVG5"
-  >
-  <img src="assets/img/one-piece.png" alt="Imagem de fundo" />
+
+<div class="big-card__container">
+  <!-- os links e imagens foram transferidos para o big-card.component.ts para habilitar uma mudança dinâmica -->
+  <a [href]="crunchyrollLink">
+    <img [src]="imgLink" alt="Imagem de fundo" />
   </a>
+
   <div class="texto">
-    <span class="tag">Principais da semana</span>
-    <h2>
-      O REI ESTÁ DE VOLTA!
-      <br>
-      One Piece Retorna amanhã!
-      <a
-      href=
-    "https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece?srsltid=AfmBOorzoaaxPZzwD7NOI70nVVGLf5v9u-ypRmMhY0RpuO7L1i6uIVG5"
-      >
-      Confira no site oficial da Crunchyroll
-      </a>
-    </h2>
+    <h2> O REI ESTÁ DE VOLTA!<br> </h2>
+
+    <hr>
+
+    <p>
+      One Piece Retorna amanhã! Confira no site oficial da
+      <a [href]="crunchyrollLink">Crunchyroll </a>
+    </p>
+
   </div>
+
 </div>
