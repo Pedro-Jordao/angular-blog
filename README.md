@@ -1,29 +1,47 @@
-# AngularBlog
+# MUGIWARANDO BLOG
 
-A blog project created with Angular for Decola Tech 2025 challenge.
+Projeto desenvolvido como parte do bootcamp **Decola Tech Avanade 2025**, com o objetivo de praticar conceitos fundamentais do Angular 14, incluindo:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+- Componentização
+- Data Binding
+- Diretivas
+- Módulos
+- Navegação com rotas
+- Organização de projeto em pastas
 
-## Development server
+## Estrutura de Diretórios
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+src/ └── app/ ├── components/ │ ├── big-card/ # Componente principal de destaque │ ├── small-card/ # Componente reutilizável de cards menores │ ├── menu-bar/ # Componente da barra de menu com ícones sociais │ └── menu-title/ # Componente de título da seção ├── data/ │ └── dataFake.ts # Fonte de dados simulada ├── pages/ │ ├── home/ # Página principal com destaque e cards │ └── content/ # Página de conteúdo dinâmico com base no ID da rota ├── app.component.* # Componente raiz ├── app-routing.module.ts # Configuração de rotas └── app.module.ts # Módulo principal da aplicação
 
-## Code scaffolding
+markdown
+Copiar
+Editar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias utilizadas
 
-## Build
+- [Angular CLI 14.1.2](https://angular.io/)
+- Node.js (recomendado: v16 LTS)
+- TypeScript
+- HTML + CSS (sem Bootstrap)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Execução
 
-## Running unit tests
+```bash
+npm install
+ng serve
+Acesse no navegador: http://localhost:4200
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Aprendizados
+Durante o desenvolvimento, foram abordados os seguintes tópicos:
 
-## Running end-to-end tests
+Criação e uso de componentes reutilizáveis (big-card, small-card)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Passagem de propriedades via @Input
 
-## Further help
+Uso de routerLink para navegação com parâmetros
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Simulação de dados com arquivo TypeScript (dataFake.ts)
+
+Responsividade com CSS
+
+Estilização utilizando referências visuais do Dribbble e ferramenta de cores Just Color Picker
