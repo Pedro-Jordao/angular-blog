@@ -1,10 +1,10 @@
 <div class="small-card__container">
-  <a [href]="newsLink">
+  <a [routerLink]="['content', Id]">
     <img [src]="imgLink" alt="Imagem do card" />
   </a>
 
   <div class="texto">
-    <h2><a href=""> {{newsTitle}} </a></h2>
+    <h2><a [routerLink]="['content', Id]"> {{newsTitle}} </a></h2>
     <p> {{newsText}} </p>
   </div>
 </div>
