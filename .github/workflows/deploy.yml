@@ -29,10 +29,12 @@ jobs:
       - name: 🛠️ Build Angular App
         run: npm run build -- --configuration production
 
+      - name: 📂 List build output
+        run: ls -R ./dist/angular-blog
 
       - name: 🚀 Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'angular-prd01'
           slot-name: 'production'
-          package: dist/angular-blog
+          package: ./dist/angular-blog
