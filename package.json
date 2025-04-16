@@ -5,9 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "postbuild": "copy src\\web.config dist\\angular-blog\\web.config",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
-  },
+},
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.1.0",
